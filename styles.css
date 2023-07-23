@@ -13,71 +13,56 @@ body {
     height: 100vh;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.name {
+    font-size: 72px;
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 .quote {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
     text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.quote::before,
+.quote::after {
+    content: '"';
+    color: #007BFF;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.quote::before {
+    margin-right: 5px;
 }
 
-.contact-button {
-    padding: 5px 10px;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
+.quote::after {
+    margin-left: 5px;
 }
 
-.contact-button:hover {
-    background-color: #333;
+.center:hover .quote {
+    color: #007BFF;
 }
 
-.contact-info {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
+.quote:hover::before,
+.quote:hover::after {
+    color: #0056b3;
 }
 
-.contact-info h3 {
-    margin-bottom: 10px;
+.center:hover .name {
+    color: #0056b3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.social-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+@media (max-width: 768px) {
+    .name {
+        font-size: 48px;
+    }
 
-.social-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #555;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.social-button:hover {
-    background-color: #333;
+    .quote {
+        font-size: 20px;
+    }
 }
