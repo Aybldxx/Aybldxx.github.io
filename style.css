@@ -22,17 +22,18 @@ header {
 
 #socials {
   padding: 20px;
+  text-align: center;
 }
 
 #socials h2 {
   font-size: 24px;
-  text-align: center;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .social-button {
