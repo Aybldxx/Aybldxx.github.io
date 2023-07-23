@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.discord-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.discord-button:hover {
+    background-color: #5a68a7;
+}
+
+.contact {
+    font-size: 18px;
+}
