@@ -13,15 +13,15 @@ body {
   height: 80vh;
 }
 
-.name {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .call-to-action {
   text-align: center;
   max-width: 600px;
+}
+
+.call-to-action h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .call-to-action h2 {
@@ -60,7 +60,11 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   margin: 5px;
+  border: none;
   border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .links .social-button:hover {
