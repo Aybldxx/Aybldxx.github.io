@@ -7,21 +7,21 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: #f2f2f2;
   height: 80vh;
+  padding: 0 20px;
 }
 
 .name {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
-  margin: 10px 0;
 }
 
 .call-to-action {
   text-align: center;
-  margin-top: 30px;
+  margin: 0 20px;
+  flex: 1;
 }
 
 .call-to-action h1 {
@@ -51,7 +51,7 @@ body {
 .hamburger-menu {
   position: fixed;
   top: 0;
-  left: -250px;
+  right: -250px;
   background-color: #333;
   color: #fff;
   padding: 20px;
@@ -61,11 +61,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: left 0.3s ease;
+  transition: right 0.3s ease;
 }
 
 .hamburger-menu.active {
-  left: 0;
+  right: 0;
 }
 
 .hamburger-menu ul {
