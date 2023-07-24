@@ -5,4 +5,4 @@ menuIcon.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
   hamburgerMenu.classList.toggle('active');
-}
+} 
