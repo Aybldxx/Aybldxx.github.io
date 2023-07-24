@@ -7,24 +7,24 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   background-color: #f2f2f2;
   height: 80vh;
-  padding: 0 20px;
 }
 
 .name {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .call-to-action {
   text-align: center;
-  margin: 0 20px;
-  flex: 1;
+  max-width: 600px;
 }
 
-.call-to-action h1 {
+.call-to-action h2 {
   font-size: 30px;
   color: #333;
 }
@@ -48,46 +48,28 @@ body {
   background-color: #0056b3;
 }
 
-.hamburger-menu {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  height: 100vh;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  transition: right 0.3s ease;
+.links {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.hamburger-menu.active {
-  right: 0;
-}
-
-.hamburger-menu ul {
+.links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.hamburger-menu li {
-  margin-bottom: 15px;
+.links li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-.hamburger-menu a {
-  color: #fff;
+.links a {
+  color: #333;
   text-decoration: none;
   font-size: 16px;
 }
 
 .email {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: #fff;
-  font-size: 16px;
+  margin-top: 20px;
 }
