@@ -1,68 +1,86 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 80vh;
 }
 
-.name {
-    font-size: 72px;
-    color: #007BFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+.logo {
+  width: 150px; /* Adjust the size as needed */
 }
 
-.quote {
-    font-size: 24px;
-    font-style: italic;
-    color: #333;
-    text-align: center;
-    max-width: 600px;
-    margin-bottom: 30px;
+.call-to-action {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.quote::before,
-.quote::after {
-    content: '"';
-    color: #007BFF;
+.call-to-action h1 {
+  font-size: 30px;
+  color: #333;
 }
 
-.quote::before {
-    margin-right: 5px;
+.call-to-action p {
+  font-size: 18px;
+  color: #666;
 }
 
-.quote::after {
-    margin-left: 5px;
+.join-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
-.center:hover .quote {
-    color: #007BFF;
+.join-button:hover {
+  background-color: #0056b3;
 }
 
-.quote:hover::before,
-.quote:hover::after {
-    color: #0056b3;
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.center:hover .name {
-    color: #0056b3;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-    .name {
-        font-size: 48px;
-    }
+.hamburger-menu li {
+  margin-bottom: 15px;
+}
 
-    .quote {
-        font-size: 20px;
-    }
+.hamburger-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.email {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 16px;
 }
