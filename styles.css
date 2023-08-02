@@ -1,20 +1,20 @@
 body {
-    font-family: "Courier New", monospace;
-    background-color: #212121;
-    color: #f0f0f0;
+    font-family: "Consolas", "Courier New", monospace;
+    background-color: #000000; /* Black background */
+    color: #00ff00; /* Neon green text color */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #1f1f1f; /* Dark grey header background */
     padding: 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
-    color: #ffea00; /* Yellow text color */
+    font-size: 36px;
+    color: #ff9900; /* Neon orange text color */
 }
 
 main {
@@ -22,32 +22,34 @@ main {
 }
 
 h2 {
-    font-size: 24px;
-    color: #00c7ff; /* Blue text color */
+    font-size: 28px;
+    color: #ff00ff; /* Neon pink text color */
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
 blockquote {
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     margin: 20px 0;
     padding-left: 20px;
-    border-left: 3px solid #555;
+    border-left: 3px solid #888888; /* Dark grey quote border */
+    color: #55ff55; /* Light green quote text color */
 }
 
 footer {
-    background-color: #333;
+    background-color: #1f1f1f; /* Dark grey footer background */
     padding: 10px;
     text-align: center;
 }
 
 footer p {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
+    color: #777777; /* Grey footer text color */
 }
 
 /* Social Buttons */
@@ -58,7 +60,7 @@ footer p {
 
 .social-icon {
     font-size: 24px;
-    color: #00c7ff; /* Blue icon color */
+    color: #00ff00; /* Neon green icon color */
     margin: 0 10px;
 }
 
