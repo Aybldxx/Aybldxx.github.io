@@ -15,6 +15,16 @@
             flex-direction: column;
         }
         
+        .fancy-heading {
+            font-family: "Lucida Handwriting", cursive;
+            font-size: 60px;
+            color: #ff5a5f;
+            margin-bottom: 20px;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+        }
+
         h1 {
             font-size: 40px;
             color: #333;
@@ -23,7 +33,9 @@
             opacity: 0; /* Initially hidden */
             animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
         }
-        
+
+        /* Rest of the CSS remains the same */
+
         /* Keyframes for fade-in animation */
         @keyframes fadeIn {
             0% {
@@ -35,53 +47,10 @@
                 transform: translateY(0);
             }
         }
-        
-        p {
-            font-size: 18px;
-            color: #666;
-            text-align: center;
-            margin: 10px 0;
-        }
-        
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .cta-section {
-            background-color: #ff5a5f;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .cta-heading {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        .cta-text {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #fff;
-            color: #ff5a5f;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-    <h1>Welcome</h1>
+    <h1 class="fancy-heading">Discover a World of Creativity</h1>
     <p>Step into my world of creativity, beauty, and art.</p>
     <p>For business inquiries, please contact me at: <a href="mailto:onlyfans@aybldx.com">onlyfans@aybldx.com</a></p>
     <p>Connect with me on Twitter: <a href="https://twitter.com/aybldx">@aybldx</a></p>
