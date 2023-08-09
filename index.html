@@ -19,6 +19,21 @@
             font-size: 36px;
             color: #333;
             margin-bottom: 10px;
+            text-align: center; /* Added for centering */
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+        }
+        
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         p {
@@ -71,6 +86,9 @@
     <p>For business inquiries, please contact me at: <a href="mailto:onlyfans@aybldx.com">onlyfans@aybldx.com</a></p>
     <p>Connect with me on Twitter: <a href="https://twitter.com/aybldx">@aybldx</a></p>
     <p>Follow me for exclusive content, updates, and more!</p>
+
+    <!-- Add the OnlyFans icon here -->
+    <img src="onlyfans-icon.png" alt="OnlyFans Icon" width="1028">
 
     <div class="cta-section">
         <h2 class="cta-heading">Join Our Team of OnlyFans Models!</h2>
