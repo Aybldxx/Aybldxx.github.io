@@ -70,5 +70,5 @@ nav a, section a {
 }
 
 nav a:hover, section a:hover {
-    color: #e05591;
+    color: #ff0000; /* Red color on hover */
 }
