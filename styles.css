@@ -16,7 +16,6 @@ header {
     padding: 10em 0;
     overflow: hidden;
 }
-
 /* ... Existing styles ... */
 
 .cta-button {
@@ -42,45 +41,16 @@ header {
 
 /* Animation for header text */
 header h1 {
-    animation: scaleAndRotate 3s ease-in-out infinite alternate;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-in-out 0.5s forwards;
 }
 
-@keyframes scaleAndRotate {
-    0%, 100% {
-        transform: scale(1) rotate(0deg);
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    50% {
-        transform: scale(1.2) rotate(5deg);
-    }
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #ff69b4;
-}
-
-nav li {
-    margin: 0 1em;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-section {
-    padding: 2em;
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #ff69b4;
-    color: white;
 }
 
 /* Additional styles for FAQ section */
