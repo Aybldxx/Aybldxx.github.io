@@ -4,8 +4,10 @@ body {
     padding: 0;
     background-color: #1a1a1a;
     color: white;
-    overflow: hidden;
 }
+
+/* Rest of your styles */
+
 
 header {
     position: relative;
