@@ -8,7 +8,6 @@ body {
 
 /* Rest of your styles */
 
-
 header {
     position: relative;
     background-color: #ff69b4;
@@ -26,16 +25,20 @@ header {
     background-color: #ff69b4;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border: none;
+    border-radius: 25px;
     transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
     background-color: #e05591;
+    cursor: pointer;
 }
 
 /* ... Rest of the styles ... */
-
 
 /* Animation for header text */
 header h1 {
