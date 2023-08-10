@@ -1,3 +1,4 @@
+/* Body and general styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,8 +7,7 @@ body {
     color: white;
 }
 
-/* Rest of your styles */
-
+/* Main header */
 header {
     position: relative;
     background-color: #ff69b4;
@@ -16,68 +16,59 @@ header {
     padding: 10em 0;
     overflow: hidden;
 }
-/* ... Existing styles ... */
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff69b4;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button:hover {
-    background-color: #e05591;
-    cursor: pointer;
-}
-
-/* ... Rest of the styles ... */
-
-/* Animation for header text */
+/* Header animation */
 header h1 {
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInUp 1.5s ease-in-out 0.5s forwards;
+    animation: scaleAndRotate 3s ease-in-out infinite alternate;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Additional styles for FAQ section */
-.faq-container {
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2em;
+    justify-content: center;
+    background-color: #ff69b4;
 }
 
-.faq {
-    max-width: 48%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em;
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 5px;
+nav li {
+    margin: 0 1em;
 }
 
-.faq h3 {
-    font-size: 1.2em;
+nav a {
+    text-decoration: none;
+    color: white;
 }
 
-.faq p {
-    margin-top: 10px;
+/* Blog post styles */
+.blog-post h2 {
+    font-size: 24px;
+    color: #ff69b4;
+    margin-top: 20px;
 }
 
-/* Rest of the existing styles */
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Link styles */
+nav a, section a {
+    color: #ff69b4;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover, section a:hover {
+    color: #e05591;
+}
