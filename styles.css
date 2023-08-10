@@ -18,6 +18,25 @@ header {
     overflow: hidden;
 }
 
+/* ... Existing styles ... */
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e05591;
+}
+
+/* ... Rest of the styles ... */
+
+
 /* Animation for header text */
 header h1 {
     animation: scaleAndRotate 3s ease-in-out infinite alternate;
