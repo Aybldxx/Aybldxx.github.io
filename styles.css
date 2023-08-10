@@ -10,7 +10,7 @@ body {
 /* Main header */
 header {
     position: relative;
-    background-color: #ff69b4;
+    background-color: #2e2e2e; /* Dark gray background */
     color: white;
     text-align: center;
     padding: 10em 0;
@@ -29,7 +29,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #ff69b4;
+    background-color: #2e2e2e; /* Dark gray background */
 }
 
 nav li {
