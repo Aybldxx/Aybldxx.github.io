@@ -16,23 +16,17 @@ header {
     overflow: hidden;
 }
 
-.header-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('cosmos-nebula-universe-background.jpg');
-    animation: particlesAnimation 20s linear infinite;
-    z-index: -1;
+/* Animation for header text */
+header h1 {
+    animation: scaleAndRotate 3s ease-in-out infinite alternate;
 }
 
-@keyframes particlesAnimation {
-    from {
-        transform: translateY(0%);
+@keyframes scaleAndRotate {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
     }
-    to {
-        transform: translateY(-100%);
+    50% {
+        transform: scale(1.2) rotate(5deg);
     }
 }
 
